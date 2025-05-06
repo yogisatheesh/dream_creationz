@@ -17,16 +17,20 @@
 
 <!-- Header -->
 <header id="header">
-    <div class="logo">Dream <span>Creationz</span></div>
+    <div class="logo">
+<img src="assets/images/Dream Creations logo final-01.png" alt="Dream Creation Logo">
+</div>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+
+
 </header>
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
@@ -49,13 +53,13 @@
     <div class="about-container animate__animated animate__fadeInLeft">
         <div class="about-text">
             <h2>About <span>Dream Creationz</span></h2>
-            <p>With a decade of experience in orchestrating spectacular events, Dream Creationz is your trusted partner in crafting unforgettable moments across Malaysia and Singapore. Our passionate team specializes in creating seamless experiences — from grand orchestra nights and energetic DJ parties to elegant hall arrangements and enchanting decors.</p>
+            <p>From my Career as a finance manageer, I discovered a true passion for event planning, which led me to pursue my dream of creating unforgettable experiences. This passion became reality with the launch of Dream Creations Event Management, where i bring creativity and precision together to craft exceptional events.</p>
 
-            <p>We believe every occasion deserves to be extraordinary. Whether it’s a wedding, corporate gala, or a milestone celebration — we blend creativity, precision, and passion to deliver events that dazzle and delight.</p>
+            <p>Founded in 2017, Dream Creationsz started with a passion for event decoration and has since grown into a full - service event management company. We currently provide our services across Malaysia, with the vision of explanding world wide. From breathtaking decor to live entertainment, catering, and technical support, we bring every event to life with creativity, excellence and attention to detail.</p>
 
             <div class="about-stats">
                 <div class="stat-card">
-                    <h3>10+</h3>
+                    <h3>17+</h3>
                     <p>Years of Experience</p>
                 </div>
                 <div class="stat-card">
@@ -99,15 +103,37 @@
 
             <div class="event-card">
                 <img src="assets/images/party-hall.jpg" alt="Party Hall">
-                <h3>Party Hall Arrangements</h3>
+                <h3>Event Decorations</h3>
                 <p>Stylish, spacious halls tailored for weddings, birthdays, and corporate celebrations.</p>
             </div>
 
-            <div class="event-card">
-                <img src="assets/images/decors.jpg" alt="Decors">
-                <h3>Elegant Decors</h3>
+<div class="event-card">
+                <img src="assets/images/Caters.jpg" alt="caters">
+                <h3>Catering Services</h3>
+                <p>Delicious Foods and Services. Custom menus for all occassions</p>
+            </div>
+<div class="event-card">
+                <img src="assets/images/violinst.jpg" alt="music">
+                <h3>Live Band & Solo Performances</h3>
                 <p>Stunning floral setups, thematic designs, and elegant decor that create magical atmospheres.</p>
             </div>
+
+<div class="event-card">
+                <img src="assets/images/Sound.jpg" alt="Sound">
+                <h3>Sound & Lighting System</h3>
+                <p>Extradinary Sound and Light Setups</p>
+            </div>
+<div class="event-card">
+                <img src="assets/images/Emcee.jpg" alt="Emcee">
+                <h3>Emcee & Hosting</h3>
+                <p>Experienced Emcee & Hosting </p>
+            </div>
+            <div class="event-card">
+                <img src="assets/images/decors.jpg" alt="Decors">
+                <h3>Other Event Essentials</h3>
+                <p>Stunning floral setups, thematic designs, and elegant decor that create magical atmospheres.</p>
+            </div>
+
         </div>
     </div>
 <div class="sparkle-element sparkle-1"></div>
@@ -207,13 +233,29 @@
 
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/yourwhatsappnumber" target="_blank" class="whatsapp-btn">
-    <img src="assets/images/whatsapp-icon.png" alt="WhatsApp">
+<a href="https://wa.me/yourwhatsappphonenumber" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat" width="50" height="50">
 </a>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+document.getElementById("modeSwitchIcon").addEventListener("change", function() {
+  document.body.classList.toggle("dark-mode");
+  if(document.body.classList.contains("dark-mode")){
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// On page load — apply saved theme
+if(localStorage.getItem('theme') === 'dark'){
+  document.body.classList.add('dark-mode');
+  document.getElementById('modeSwitchIcon').checked = true;
+}</script>
 
 
 </body>

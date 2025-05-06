@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #120E43;
-    color: #F0F0F0;
+    background: #000000;
+    color: #FFFFFF;
 }
 
 a {
@@ -26,23 +26,27 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(18, 14, 67, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4); 
 }
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    color: #FFD700;
-}
+.logo img {
+            max-width: 250px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo img:hover {
+            transform: scale(1.2);
+        }
 
 .logo span {
-    color: #7B2CBF;
+    background: linear-gradient(90deg, #FFD700, #FFB700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ===== Menu Bar Base ===== */
@@ -56,7 +60,7 @@ nav ul li a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     transition: all 0.3s ease;
     padding: 5px 0;
@@ -70,7 +74,7 @@ nav ul li a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+    background: linear-gradient(90deg, #FFD700, #FFB700);
     transition: all 0.4s ease;
 }
 
@@ -133,7 +137,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+   background: rgba(0, 0, 0, 0.6);/* Dark overlay */
     z-index: 1; /* Overlay sits above the video */
 }
 
@@ -143,7 +147,7 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #F0F0F0;
+    color: #FFD700;
     z-index: 2;
 }
 
@@ -155,7 +159,9 @@ nav ul li a:hover {
 }
 
 .hero-content h1 span {
-    color: #00FFD1;
+   background: linear-gradient(90deg, #FFD700, #FFB700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content p {
@@ -164,8 +170,8 @@ nav ul li a:hover {
 }
 
 .cta-btn {
-    background-color: #FFD700;
-    color: #1C164F;
+    background: linear-gradient(90deg, #FFD700, #FFB700);
+  color: #000000;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -175,7 +181,7 @@ nav ul li a:hover {
 }
 
 .cta-btn:hover {
-    background-color: #00FFD1;
+    background-color: #B4FEE7;
     color: #1C164F;
 }
 /* Add more sparkle classes with different delay and size if needed */
@@ -210,13 +216,13 @@ nav ul li a:hover {
 .about-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 20px #FFD700, 0 0 40px #7B2CBF;
+    box-shadow: 0 0 20px #FFD700, 0 0 40px #FFB700;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-image img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px #FFD700, 0 0 50px #7B2CBF;
+    box-shadow: 0 0 30px #FFD700, 0 0 50px #FFB700;
 }
 .about-stats {
     display: flex;
@@ -229,28 +235,22 @@ nav ul li a:hover {
 .stat-card {
     flex: 1 1 200px;
     max-width: 250px;
-    background: linear-gradient(145deg, #7B2CBF, #4B0FA0);
+    background: #000000;
     padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow:
-        0 0 15px #FFD700,
-        0 0 30px #FFD700,
-        inset 0 0 10px #4B0FA0;
+     border: 2px solid #FFD700;
+  box-shadow: 0 0 15px #FFD700, inset 0 0 10px #FFB700;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .stat-card:hover {
     transform: translateY(-8px);
-    box-shadow:
-        0 0 25px #FFD700,
-        0 0 45px #FFD700,
-        inset 0 0 15px #4B0FA0;
+    box-shadow: 0 0 25px #FFD700, inset 0 0 15px #FFB700;
 }
 
 .stat-card h3 {
     font-size: 2.5rem;
-    color: #FFD700;
+     color: #FFD700;
     margin-bottom: 10px;
 }
 
@@ -261,19 +261,21 @@ nav ul li a:hover {
 /* Events Section */
 .events-section {
     padding: 100px 20px;
-    background: #4B0FA0; /* Rich purple background */
+     background: #000000; /* Rich purple background */
     color: #F0F0F0;
     text-align: center;
 }
 
 .events-section h2 {
     font-size: 2.8rem;
-    color: #FFD700;
+   color: #FFD700;
     margin-bottom: 10px;
 }
 
 .events-section h2 span {
-    color: #00FFD1;
+    background: linear-gradient(90deg, #FFD700, #FFB700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-subtitle {
@@ -292,22 +294,16 @@ nav ul li a:hover {
 .event-card {
     flex: 1 1 220px;
     max-width: 250px;
-    background: linear-gradient(145deg, #7B2CBF, #4B0FA0);
-    border-radius: 15px;
+    background: #000000;
+  border: 2px solid #FFD700;
     padding: 20px;
-    box-shadow:
-        0 0 15px #00FFD1,
-        0 0 30px #00FFD1,
-        inset 0 0 10px #4B0FA0;
+    box-shadow: 0 0 15px #FFD700, inset 0 0 10px #FFB700;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
     transform: translateY(-8px);
-    box-shadow:
-        0 0 25px #00FFD1,
-        0 0 45px #00FFD1,
-        inset 0 0 15px #4B0FA0;
+   box-shadow: 0 0 25px #FFD700, inset 0 0 15px #FFB700;
 }
 
 .event-card img {
@@ -324,7 +320,7 @@ nav ul li a:hover {
 
 .event-card h3 {
     font-size: 1.4rem;
-    color: #FFD700;
+    color: #FFBD59;
     margin-bottom: 10px;
 }
 
@@ -335,7 +331,7 @@ nav ul li a:hover {
 /* Pricing Section */
 .pricing-section {
     padding: 100px 20px;
-    background: #1C164F; /* Deep navy */
+     background: #000000; /* Deep navy */
     color: #F0F0F0;
     text-align: center;
 }
@@ -347,7 +343,9 @@ nav ul li a:hover {
 }
 
 .pricing-section h2 span {
-    color: #00FFD1;
+     background: linear-gradient(90deg, #FFD700, #FFB700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pricing-cards {
@@ -361,53 +359,48 @@ nav ul li a:hover {
 .pricing-card {
     flex: 1 1 220px;
     max-width: 280px;
-    background: linear-gradient(145deg, #7B2CBF, #4B0FA0);
-    border-radius: 15px;
+    background: #000000;
+  border: 2px solid #FFD700;
     padding: 30px 20px;
-    box-shadow:
-        0 0 15px #FFD700,
-        0 0 30px #FFD700,
-        inset 0 0 10px #4B0FA0;
+    box-shadow: 0 0 15px #FFD700, inset 0 0 10px #FFB700;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-card.featured {
-    background: linear-gradient(145deg, #00FFD1, #007B9C);
-    box-shadow:
-        0 0 15px #00FFD1,
-        0 0 30px #00FFD1,
-        inset 0 0 10px #007B9C;
+    background: linear-gradient(145deg, #FFD700, #FFB700);
+    color: #000000;
 }
 
 .pricing-card:hover {
     transform: translateY(-8px);
     box-shadow:
-        0 0 25px #FFD700,
-        0 0 45px #FFD700,
+        0 0 25px #FFBD59,
+        0 0 45px #FFBD59,
         inset 0 0 15px #4B0FA0;
 }
 
 .pricing-card.featured:hover {
     box-shadow:
-        0 0 25px #00FFD1,
-        0 0 45px #00FFD1,
+        0 0 25px #B4FEE7,
+        0 0 45px #B4FEE7,
         inset 0 0 15px #007B9C;
 }
 
 .pricing-card h3 {
     font-size: 1.8rem;
-    color: #FFD700;
+    color: #FFBD59;
     margin-bottom: 15px;
 }
 
-.pricing-card.featured h3 {
-    color: #1C164F;
+.pricing-card.featured h3 ,
+.pricing-card.featured p {
+  color: #000000;
 }
 
 .pricing-card .price {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00FFD1;
+    color: #B4FEE7;
     font-weight: bold;
 }
 
@@ -433,7 +426,7 @@ nav ul li a:hover {
 .pricing-btn {
     display: inline-block;
     padding: 10px 25px;
-    background: #FFD700;
+    background: #FFBD59;
     color: #1C164F;
     border-radius: 25px;
     font-weight: bold;
@@ -442,14 +435,14 @@ nav ul li a:hover {
 }
 
 .pricing-btn:hover {
-    background: #00FFD1;
+    background: #B4FEE7;
     color: #1C164F;
 }
 /* Contact Us Section */
 .contact-section {
     padding: 100px 20px;
-    background: #1C164F; /* Deep navy */
-    color: #F0F0F0;
+    background: #FFD700 /* Deep navy */
+    color: #FFD700;
     text-align: center;
 }
 
@@ -460,12 +453,12 @@ nav ul li a:hover {
 }
 
 .contact-section h2 span {
-    color: #00FFD1;
+    color: #FFD700;
 }
 
 .contact-section .section-subtitle {
     font-size: 1.2rem;
-    color: #EEE;
+    color: #FFD700;
     margin-bottom: 40px;
 }
 
@@ -491,7 +484,7 @@ nav ul li a:hover {
 
 .contact-info p {
     font-size: 1rem;
-    color: #F0F0F0;
+    color: #FFD700;
     margin-bottom: 10px;
 }
 
@@ -516,30 +509,46 @@ nav ul li a:hover {
 }
 
 .social-link:hover {
-    color: #00FFD1;
+    color: #FFD700;
 }
 
 /* WhatsApp Floating Button */
-.whatsapp-btn {
+.whatsapp-float {
     position: fixed;
+    width: 60px;
+    height: 60px;
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    border-radius: 50%;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it stays on top */
-    transition: transform 0.3s ease;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
 }
 
-.whatsapp-btn:hover {
-    transform: scale(1.1);
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
 }
 
-.whatsapp-btn img {
-    width: 50px;
-    height: 50px;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 /* Add this CSS for the sparkle effect */
 @keyframes sparkle {
     0% {
@@ -563,7 +572,7 @@ nav ul li a:hover {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 0, 150, 0.8), rgba(0, 255, 255, 0.8));
+    background: linear-gradient(90deg, #FFD700, #FFB700);
     animation: sparkle 1.5s infinite ease-in-out;
     pointer-events: none;
 }
